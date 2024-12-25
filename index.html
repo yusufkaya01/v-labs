@@ -3,34 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanaheim Labs</title>
-    <link href="./styles.css" rel="stylesheet">
+    <title>Vanaheim Labs - Coming Soon</title>
+
+    <link rel="stylesheet" href="styles/main.css"> <!-- Link to external CSS -->
+    <script src="scripts/main.js" defer></script> <!-- Link to external JS -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Poppins:wght@600&family=Lato:wght@700&family=Montserrat:wght@800&family=Roboto:wght@700&display=swap" rel="stylesheet"> <!-- Modern fonts -->
+
 </head>
 <body>
 
-    <div id="menu-items">
-        <a href="./products.html">Products</a>
-        <a href="./services.html">Services</a>
-        <a href="./about-us.html">About Us</a>
-        <a href="./contact.html">Contact</a>
+    <!-- Company Information Start -->
+    <div class="header-container">
+        <h1 class="company-name">VANAHEIM LABS</h1>
+        <p class="slogan">Redefining DevOps & Cloud</p>
+        <p class="slogan">Wait for our solutions</p>
     </div>
-    <h1 id="welcome-message">Welcome to Home of Vanaheim Labs</h1>
-      <h2 id="welcome-description">We provide solutions for your Cloud needs.</h2>
+    <!-- Company Information End -->
+
+    <!-- Product Names Start -->
+
+        <!-- The two texts -->
+        <div id="container">
+            <span id="text1"></span>
+            <span id="text2"></span>
+        </div>
+
+        <!-- The SVG filter used to create the merging effect -->
+        <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                    <feColorMatrix in="SourceGraphic"
+                            type="matrix"
+                            values="1 0 0 0 0
+                                            0 1 0 0 0
+                                            0 0 1 0 0
+                                            0 0 0 255 -140" />
+                </filter>
+            </defs>
+        </svg>
+    <!-- Product Names End -->
+
+    <!-- Loading Start -->
+    <div class="wrap">
+        <svg aria-hidden="true" viewBox="0 0 230 154">
+            <g class="opacity">
+                <path class="stepOne" d="M180.7 3.1C181.8 1.4 181 0 179 0h-31.1c-2 0-4.6 1.4-5.7 3.1L49.7 150.9c-1.1 1.7-0.3 3.1 1.7 3.1h31.1c2 0 4.6-1.4 5.7-3.1L180.7 3.1z"/>
+              <path class="stepFour" d="M39.4 80.1c-1.1-1.7-1.1-4.6 0-6.3L83.6 3.1C84.7 1.4 83.9 0 81.8 0H50.7c-2 0-4.6 1.4-5.7 3.1L7.6 63 0.8 73.9c-1.1 1.7-1.1 4.6 0 6.3L45 150.9c1.1 1.7 3.6 3.1 5.7 3.1h31.1c2 0 2.8-1.4 1.7-3.1L39.4 80.1z"/>
+              <path class="stepThree" d="M142.2 150.9c1.1 1.7 3.6 3.1 5.7 3.1H179c2 0 2.8-1.4 1.7-3.1L88.3 3.1C87.2 1.4 84.6 0 82.6 0H51.5c-2 0-2.8 1.4-1.7 3.1L142.2 150.9z"/>
+              <path class="stepTwo" d="M190.6 80.1c1.1-1.7 1.1-4.6 0-6.3L146.4 3.1c-1.1-1.7-0.3-3.1 1.7-3.1h31.1c2 0 4.6 1.4 5.7 3.1L222.4 63l6.8 10.9c1.1 1.7 1.1 4.6 0 6.3L185 150.9c-1.1 1.7-3.6 3.1-5.7 3.1h-31.1c-2 0-2.8-1.4-1.7-3.1L190.6 80.1z"/>
+            </g>
+            <path class="loading--stepOne" d="M180.7 3.1C181.8 1.4 181 0 179 0h-31.1c-2 0-4.6 1.4-5.7 3.1L49.7 150.9c-1.1 1.7-0.3 3.1 1.7 3.1h31.1c2 0 4.6-1.4 5.7-3.1L180.7 3.1z"/>
+          <path class="loading--stepFour" d="M39.4 80.1c-1.1-1.7-1.1-4.6 0-6.3L83.6 3.1C84.7 1.4 83.9 0 81.8 0H50.7c-2 0-4.6 1.4-5.7 3.1L7.6 63 0.8 73.9c-1.1 1.7-1.1 4.6 0 6.3L45 150.9c1.1 1.7 3.6 3.1 5.7 3.1h31.1c2 0 2.8-1.4 1.7-3.1L39.4 80.1z"/>
+          <path class="loading--stepThree" d="M142.2 150.9c1.1 1.7 3.6 3.1 5.7 3.1H179c2 0 2.8-1.4 1.7-3.1L88.3 3.1C87.2 1.4 84.6 0 82.6 0H51.5c-2 0-2.8 1.4-1.7 3.1L142.2 150.9z"/>
+          <path class="loading--stepTwo" d="M190.6 80.1c1.1-1.7 1.1-4.6 0-6.3L146.4 3.1c-1.1-1.7-0.3-3.1 1.7-3.1h31.1c2 0 4.6 1.4 5.7 3.1L222.4 63l6.8 10.9c1.1 1.7 1.1 4.6 0 6.3L185 150.9c-1.1 1.7-3.6 3.1-5.7 3.1h-31.1c-2 0-2.8-1.4-1.7-3.1L190.6 80.1z"/>
+         </svg>
+    </div>
+    <!-- Loading End -->
+
 
     
 </body>
-
-<footer>
-    <div id="footer-menu-items">
-        <a href="./products.html">Products</a>
-        <a href="./services.html">Services</a>
-        <a href="./about-us.html">About Us</a>
-        <a href="./contact.html">Contact</a>
-
-        <p>Address: 165 Street Main Avenue Estonia </p>
-        <a href="emailto:info@vanaheimlabs.com">e-Mail: info@vanaheimlabs.com</a>
-        <p>Copyright © 2025 Vanaheim Labs</p>
-    </div>
-
-</footer>
 </html>
