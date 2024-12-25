@@ -1,2 +1,2 @@
-# vanaheim-labs-web
-Home of Vanaheim Labs.
+# v-labs-web
+Home of VLabs.
