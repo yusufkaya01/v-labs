@@ -96,3 +96,25 @@ animate();
 /*
 Product Names End
 */ 
+
+document.addEventListener('mousemove', (e) => {
+    // Create multiple shapes for the trail
+    const shapes = ['shape-circle', 'shape-triangle', 'shape-hexagon', 'shape-square'];
+    
+    // Randomly select a shape
+    const randomShape = shapes[Math.floor(Math.random() * shapes.length)];
+    
+    // Create a new trail element
+    const magicTrail = document.createElement('div');
+    magicTrail.className = randomShape;
+    magicTrail.style.left = `${e.pageX}px`;
+    magicTrail.style.top = `${e.pageY}px`;
+
+    // Add the shape element to the cursor container
+    document.getElementById('cursor-container').appendChild(magicTrail);
+
+    // Remove the element after animation is complete
+    setTimeout(() => {
+        magicTrail.remove();
+    }, 2000); // Matches animation duration
+});

@@ -3,6 +3,7 @@
 /* Cool font from Google Fonts! */
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 /* General CSS Styles Start */
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif; /* Default modern font */
@@ -25,18 +26,18 @@ body {
 
 .company-name {
     font-family: 'Raleway', sans-serif;
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 900;
-    margin: 0;
-    color: #333;
+    margin-top: 150px;
+    color: #000000;
 }
 
 .slogan {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    margin: 5px 0;
-    color: #555;
+    margin-top: 150px;
+    color: #000000;
 }
 
 /* General CSS Styles End */
@@ -52,30 +53,30 @@ body {
 
 
 #container {
-	/* Center the text in the viewport. */
-	position: absolute;
-	margin: auto;
-	width: 100vw;
-	height: 80pt;
-	top: 0;
-	bottom: 0;
-	
-	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-	filter: url(#threshold) blur(0.6px);
+    /* Center the text in the viewport. */
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+    
+    /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+    filter: url(#threshold) blur(0.6px);
 }
 
 /* Your average text styling */
 #text1, #text2 {
-	position: absolute;
-	width: 100%;
-	display: inline-block;
-	
-	font-family: 'Raleway', sans-serif;
-	font-size: 80pt;
-	
-	text-align: center;
-	
-	user-select: none;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 80pt;
+    
+    text-align: center;
+    
+    user-select: none;
 }
 
 /* Product Names End */
@@ -84,29 +85,188 @@ body {
 /* Loading Start */
 
 
-.wrap 								{ width:180px; position: fixed; bottom: 10%; left: 50%; transform: translate(-50%, -50%); }
-svg 									{ width:100%; height:auto; fill:#E5E5E5; }
-.opacity 							{ opacity:.1; }
-.stepOne 							{ fill:#05384a; }
-.stepTwo 							{ fill:#b4c3c8; }
-.stepThree 						{ fill:#698892; }
-.stepFour 						{ fill:#37606e; }
-.loading--stepOne			{ fill:#741642; clip-path:inset(100% 0 0 0); animation:loading-up 2s infinite; animation-timing-function:ease-out; position:absolute; z-index:2;}
-.loading--stepTwo			{ fill:#F29DC3; clip-path:inset(100% 0 0 0); animation:loading-down 2s infinite; animation-delay:.25s ;animation-timing-function:ease-out; position:absolute; z-index:2;}
-.loading--stepThree		{ fill:#E73389; clip-path:inset(100% 0 0 0); animation:loading-up 2s infinite; animation-delay:.5s; animation-timing-function:ease-out; position:absolute; z-index:2;}
-.loading--stepFour		{ fill:#AF2769; clip-path:inset(100% 0 0 0); animation:loading-down 2s infinite; animation-delay:.75s; animation-timing-function:ease-out; position:absolute; z-index:2;}
+.wrap { 
+    width: 180px; 
+    position: fixed; 
+    bottom: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+svg { 
+    width: 100%; 
+    height: auto; 
+    fill: #E5E5E5; 
+}
+.opacity { 
+    opacity: .1; 
+}
+.stepOne { 
+    fill: #05384a; 
+}
+.stepTwo { 
+    fill: #b4c3c8; 
+}
+.stepThree { 
+    fill: #698892; 
+}
+.stepFour { 
+    fill: #37606e; 
+}
+.loading--stepOne { 
+    fill: #741642; 
+    clip-path: inset(100% 0 0 0); 
+    animation: loading-up 2s infinite; 
+    animation-timing-function: ease-out; 
+    position: absolute; 
+    z-index: 2;
+}
+.loading--stepTwo { 
+    fill: #F29DC3; 
+    clip-path: inset(100% 0 0 0); 
+    animation: loading-down 2s infinite; 
+    animation-delay: .25s; 
+    animation-timing-function: ease-out; 
+    position: absolute; 
+    z-index: 2;
+}
+.loading--stepThree { 
+    fill: #E73389; 
+    clip-path: inset(100% 0 0 0); 
+    animation: loading-up 2s infinite; 
+    animation-delay: .5s; 
+    animation-timing-function: ease-out; 
+    position: absolute; 
+    z-index: 2;
+}
+.loading--stepFour { 
+    fill: #AF2769; 
+    clip-path: inset(100% 0 0 0); 
+    animation: loading-down 2s infinite; 
+    animation-delay: .75s; 
+    animation-timing-function: ease-out; 
+    position: absolute; 
+    z-index: 2;
+}
 
-    @keyframes loading-up {
-      0%              		{ clip-path:inset(100% 0 0 0); }
-      12.5%            		{ clip-path:inset(0 0 0 0); }
-      50%            			{ clip-path:inset(0 0 0 0); }
-      62.5%               { clip-path:inset(0 0 100% 0); }
+@keyframes loading-up {
+    0% { 
+        clip-path: inset(100% 0 0 0); 
     }
-    @keyframes loading-down {
-      0%              		{ clip-path:inset(0 0 100% 0); }
-      12.5%          			{ clip-path:inset(0 0 0 0); }
-      50%            			{ clip-path:inset(0 0 0 0); }
-      62.5%            		{ clip-path:inset(100% 0 0 0); }
+    12.5% { 
+        clip-path: inset(0 0 0 0); 
     }
+    50% { 
+        clip-path: inset(0 0 0 0); 
+    }
+    62.5% { 
+        clip-path: inset(0 0 100% 0); 
+    }
+}
+
+@keyframes loading-down {
+    0% { 
+        clip-path: inset(0 0 100% 0); 
+    }
+    12.5% { 
+        clip-path: inset(0 0 0 0); 
+    }
+    50% { 
+        clip-path: inset(0 0 0 0); 
+    }
+    62.5% { 
+        clip-path: inset(100% 0 0 0); 
+    }
+}
 
 /* Loading End */
+
+#cursor-container div {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(45deg, #f8b195, #f67280);
+    opacity: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: magicTrail 2s linear forwards;
+    border-radius: 50%; /* Default shape is a circle */
+    z-index: 9999;
+}
+
+@keyframes magicTrail {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+        background: linear-gradient(45deg, #f8b195, #f67280);
+    }
+    25% {
+        background: linear-gradient(45deg, #c8d5b9, #8fc0a9);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.8) rotate(180deg);
+        background: linear-gradient(45deg, #a8d8ea, #aa96da);
+    }
+    75% {
+        background: linear-gradient(45deg, #e1eec3, #fef9d7);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5) rotate(360deg);
+        background: linear-gradient(45deg, #ffecd2, #fcb69f);
+    }
+}
+
+/* Add different shapes */
+.shape-circle {
+    border-radius: 50%;
+}
+
+.shape-triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.shape-hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.shape-square {
+    border-radius: 3px;
+}
+
+/* decor */
+
+.image-decor {
+    background-image: url(../assets/images/background-image.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    height: 110%;
+    margin-top: -250px;
+    left: -4%;
+    opacity: 0.3; /* Adjust this value between 0 and 1 */
+}
+
+/* Media queries for small devices */
+@media screen and (max-width: 600px) {
+    .company-name {
+        font-size: 3rem;
+    }
+
+    .slogan {
+        font-size: 1.5rem;
+    }
+
+    #text1, #text2 {
+        font-size: 40pt;
+    }
+
+    .wrap {
+        width: 100px;
+    }
+
+    #cursor-container div {
+        width: 8px;
+        height: 8px;
+    }
+}
